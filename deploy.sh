@@ -1,10 +1,6 @@
 #!/usr/bin/env sh
 # abort on errors
 set -e
-#update the development branch
-git add -A
-git commit -m 'update development env'
-git push -f https://github.com/Sebastian-Paterson-Jones/Sebastian-Paterson-Jones.github.io.git master:development
 # build
 yarn run build
 # navigate into the build output directory
