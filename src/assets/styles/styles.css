@@ -1,0 +1,148 @@
+/*unicons for pretty icons*/
+@import url('https://unicons.iconscout.com/release/v4.0.0/css/line.css');
+/*=======================*/
+
+/*nice fonts provided by google*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+/*=======================*/
+
+:root {
+    /*define the deader-height*/
+    --header-height: 3rem;
+    /*=======================*/
+
+    /*define the colours of the text*/
+    --hue-colour: 250;
+
+    --first-colour: hsl(var(--hue-colour), 28%, 14%) ;
+    --first-colour-second:  hsl(var(--hue-colour), 28%, 14%);
+    --first-coluor-alt: hsl(var(--hue-colour), 48%, 16%);
+    --first-colour-lighter: hsl(var(--hue-colour), 73%, 22%);
+    --title-colour: hsl(var(--hue-colour), 79%, 59%);
+    --text-colour: hsl(var(--hue-colour), 0%, 93%);
+    --text-colour-light: hsl(var(--hue-colour), 0%, 100%);
+    --input-colour: hsl(var(--hue-colour), 0%, 95%);
+    --body-colour: hsl(var(--hue-colour), 60%, 22%);
+    --conainer-colour: hsl(var(--hue-colour), 73%, 32%);
+    /*=======================*/
+
+    /*define the fonts*/
+    --body-font: 'Noto Sans JP', sans-serif;
+
+    /*font sizes*/
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*font weights*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*margins bottom*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+    /*=======================*/
+
+    /*z index of the elements*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+    /*=======================*/
+
+}
+/*font for larger screens */
+@media screen and (min-width: 968px){
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+
+    }
+}
+/*=======================*/
+
+/*base styles for elements*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-colour);
+    color: var(--text-colour);
+}
+
+h1,h2,h3,h4{
+    color: var(--title-colour);
+    font-weight: var(--font-semi-bold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*=======================*/
+
+/*target css for classes*/
+.section {
+    padding: 2rem 0 4rem;
+}
+
+.section_title {
+    font-size: var(--h1-font-size);
+}
+
+.section_subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section, .section_subtitle{
+    text-align: center;
+}
+/*=======================*/
+
+/*basic layout*/
+.container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+/*=======================*/
