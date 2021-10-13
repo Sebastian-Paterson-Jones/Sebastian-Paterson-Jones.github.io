@@ -189,27 +189,27 @@
             </div>
           </div>
         </div>
-        <form action="" class="contact_form grid">
+        <form action="https://submit-form.com/yPr3aM6j" class="contact_form grid">
           <div class="contact_inputs grid">
             <div class="contact_content">
-              <label for="" class="contact_label">Name</label>
-              <input type="text" class="contact_input">
+              <label for="name" class="contact_label">Name</label>
+              <input type="text" id="name" name="name" class="contact_input">
             </div>
             <div class="contact_content">
-              <label for="" class="contact_label">Email</label>
-              <input type="email" class="contact_input">
+              <label for="email" class="contact_label">Email</label>
+              <input type="email" id="email" name="email" class="contact_input">
             </div>
           </div>
           <div class="contact_content">
-              <label for="" class="contact_label">message</label>
-              <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+              <label for="message" class="contact_label">message</label>
+              <textarea id="message" name="message" cols="0" rows="7" class="contact_input"></textarea>
           </div>
 
           <div>
-            <a href="#" class="button button-flex">
+            <button type="submit" class="button button-flex">
               Send Message
               <i class="uil uil-message button_icon"></i>
-            </a>
+            </button>
           </div>
         </form>
       </div>
