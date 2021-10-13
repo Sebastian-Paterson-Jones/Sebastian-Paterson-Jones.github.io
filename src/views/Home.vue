@@ -53,7 +53,7 @@
       <div class="about_container container grid">
 
         <div class="about_date">
-          <p class="about_description">Frontend developer with experience in mant of the dominating frameworks.</p>
+          <p class="about_description">Frontend developer with experience in many of the dominating frameworks.</p>
         </div>
 
         <div class="about_info">
